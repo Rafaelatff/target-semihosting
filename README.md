@@ -31,7 +31,7 @@ Just run the program and the message 'Hello World' will appear at the console.
 
 ![image](https://user-images.githubusercontent.com/58916022/205921860-2be4d9a5-18e0-4459-a9c0-4540071ecba0.png)
 
-## Code tips
+## Code tips - 1 
 
 To get the clock frequency of buses (when using APIs), just type:
 
@@ -46,3 +46,10 @@ Results:
 
 ![image](https://user-images.githubusercontent.com/58916022/225132839-2dda37e2-7f52-4424-b5c4-d80713cbd141.png)
 
+## Code tips - 2 
+
+To use a function macro. 
+
+```c
+#define GPIOA_REG_RESET() do { (RCC->AHB1RSTR |= (1<<0)); (RCC->AHB1RSTR &= ~(1<<0)); } while(0)
+```
