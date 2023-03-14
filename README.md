@@ -30,3 +30,19 @@ For the code, just initialize the function 'extern void initialise_monitor_handl
 Just run the program and the message 'Hello World' will appear at the console.
 
 ![image](https://user-images.githubusercontent.com/58916022/205921860-2be4d9a5-18e0-4459-a9c0-4540071ecba0.png)
+
+## Code tips
+
+To get the clock frequency of buses (when using APIs), just type:
+
+```c
+	  // Get clock frequencies for buses
+	  printf("SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+	  printf("HCLK: %ld\r\n", HAL_RCC_GetHCLKFreq());
+	  printf("PCLK1: %ld\r\n", HAL_RCC_GetPCLK1Freq());
+	  printf("PCLK2: %ld\r\n", HAL_RCC_GetPCLK2Freq());
+```
+Results:
+
+![image](https://user-images.githubusercontent.com/58916022/225132839-2dda37e2-7f52-4424-b5c4-d80713cbd141.png)
+
